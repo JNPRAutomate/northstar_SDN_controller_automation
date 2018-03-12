@@ -12,6 +12,8 @@ script:
   - python -m py_compile provision_new_lsp.py
   - python -m py_compile get_actives_lsp.py
   - python -m py_compile get_all_lsp.py
+  - python -m py_compile provision_new_LSPs.py
+  
 
 branches:
   only:
