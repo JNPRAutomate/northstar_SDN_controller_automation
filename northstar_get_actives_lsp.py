@@ -32,4 +32,4 @@ r = requests.get(url, headers=headers, auth=(authuser, authpwd))
 # This gives the names of all the LSPs that are active
 for item in r.json():
     if item['operationalStatus'] == 'Active':
-print "This LSP is active: " + item['name']
+       print "This LSP is active: " + item['name']
