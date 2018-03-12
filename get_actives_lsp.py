@@ -1,4 +1,4 @@
-# this python script makes a rest call to Juniper Northstar to get all active LSP 
+# this python script makes a rest call to Juniper Northstar to get all actives LSP 
 # usage: python get_actives_lsp.py
 
 
