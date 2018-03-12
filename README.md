@@ -23,7 +23,7 @@ Move to your local copy of this remote repository
 cd northstar_SDN_controller_automation
 ```
 
-The file [**variables.yml**] variables.yml has your Northstar setup details. 
+The file [**variables.yml**](variables.yml) has your Northstar setup details. 
 usage:   
 ```
 vi variables.yml
