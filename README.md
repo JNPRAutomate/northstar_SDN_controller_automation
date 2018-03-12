@@ -31,19 +31,25 @@ usage:
 vi variables.yml
 ```
 
-The script [**provision_new_lsp.py**](provision_new_lsp.py) makes rest call to Juniper Northstar to create a new LSP  
+The script [**provision_new_LSP.py**](provision_new_LSP.py) makes rest call to Juniper Northstar to create a new LSP  
 usage:   
 ```
 python provision_new_lsp.py
 ```
-  
-The script [**python get_actives_lsp.py**](get_actives_lsp.py) makes a rest call to Juniper Northstar to get all actives LSP  
+
+The script [**provision_new_LSPs.py**](provision_new_LSPs.py) makes rest call to Juniper Northstar to create new LSPs defined in [**variables.yml**](variables.yml) file.    
+usage:   
+```
+python provision_new_lsp.py
+```
+
+The script [**python get_active_LSPs.py**](get_active_LSPs.py) makes a rest call to Juniper Northstar to get all actives LSP  
 usage: 
 ```
 python get_actives_lsp.py
 ```
   
-The script [**get_all_lsp.py**](get_all_lsp.py) makes a rest call to Juniper Northstar to get all LSP  
+The script [**get_all_LSPs.py**](get_all_LSPs.py) makes a rest call to Juniper Northstar to get all LSP  
 usage:   
 ```
 python get_all_lsp.py
