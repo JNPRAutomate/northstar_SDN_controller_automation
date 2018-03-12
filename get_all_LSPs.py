@@ -1,6 +1,5 @@
-# this python script makes a rest call to Juniper Northstar to get all actives LSP 
-# usage: python get_actives_lsp.py
-
+# This python script makes a rest call to Juniper Northstar to get all LSPs
+# usage: python get_all_LSPs.py
 
 import requests
 from requests.auth import HTTPBasicAuth
@@ -29,7 +28,6 @@ r = requests.get(url, headers=headers, auth=(authuser, authpwd))
 # type(r.json())
 # pprint(r.json())
 
-# This gives the names of all the LSPs that are active
 for item in r.json():
-    if item['operationalStatus'] == 'Active':
-       print "This LSP is active: " + item['name']
+        print "LSP name: " + item['name']
+

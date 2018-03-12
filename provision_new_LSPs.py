@@ -1,5 +1,5 @@
-#  This python script makes rest calls to Juniper Northstar to create new LSPs. These new LSPs are defined in the file variables.yaml 
-#  usage: python norsthstar_provision_new_lsps.py
+#  This python script makes rest calls to Juniper Northstar to create new LSPs. These new LSPs are defined in the file variables.yaml
+#  usage: python provision_new_LSPs.py
 
 import requests
 from requests.auth import HTTPBasicAuth

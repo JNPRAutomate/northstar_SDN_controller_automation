@@ -1,5 +1,5 @@
 #  This python script makes rest call to Juniper Northstar to create a new LSP
-#  usage: python provision_new_lsp.py
+#  usage: python provision_new_LSP.py
 
 import requests
 from requests.auth import HTTPBasicAuth
