@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ksator/northstar_SDN_controller_automation.svg?branch=master)](https://travis-ci.org/ksator/northstar_SDN_controller_automation)
+
 ## About this repo
 how to automate Northstar SDN controller with Python
 
@@ -47,6 +49,18 @@ usage:
 python northstar_get_all_lsp.py
 ```
 
+## Continuous integration with Travis CI
+
+There is a github webhook with Travis CI
+The syntax of the python scripts and ansible playbooks in this repository are tested automatically by Travis CI. 
+The files [**.travis.yml**](.travis.yml) and [**requirements.txt**](requirements.txt) at the root of this repository are used for this.  
+
+Here's the last build status  
+[![Build Status](https://travis-ci.org/ksator/northstar_SDN_controller_automation.svg?branch=master)](https://travis-ci.org/ksator/northstar_SDN_controller_automation)
 
 
+## Looking for more automation solutions
 
+https://github.com/ksator?tab=repositories  
+https://gitlab.com/users/ksator/projects  
+https://gist.github.com/ksator/  
