@@ -37,7 +37,7 @@ usage:
 python provision_new_lsp.py
 ```
   
-The script [**python get_actives_lsp.py**](get_actives_lsp.py) makes a rest call to Juniper Northstar to get all active LSP  
+The script [**python get_actives_lsp.py**](get_actives_lsp.py) makes a rest call to Juniper Northstar to get all actives LSP  
 usage: 
 ```
 python get_actives_lsp.py
