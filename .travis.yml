@@ -13,7 +13,7 @@ script:
   - python -m py_compile northstar_get_actives_lsp.py
   - python -m py_compile northstar_get_all_lsp.py
 
- branches:
+branches:
   only:
    - master
 
