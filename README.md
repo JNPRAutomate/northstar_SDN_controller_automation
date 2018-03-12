@@ -44,7 +44,7 @@ python northstar_get_actives_lsp.py
 The script [**northstar_get_all_lsp.py**](northstar_get_all_lsp.py) makes a rest call to Juniper Northstar to get all LSP  
 usage:   
 ```
-northstar_get_all_lsp.py
+python northstar_get_all_lsp.py
 ```
 
 
