@@ -1,5 +1,7 @@
 # this python script makes a rest call to Juniper Northstar to get all active LSP 
- 
+# usage: python northstar_get_actives_lsp.py
+
+
 import requests
 from requests.auth import HTTPBasicAuth
 from pprint import pprint
