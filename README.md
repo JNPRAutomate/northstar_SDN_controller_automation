@@ -34,7 +34,7 @@ vi variables.yml
 The script [**norsthstar_provision_new_lsp.py**](norsthstar_provision_new_lsp.py) makes rest call to Juniper Northstar to create a new LSP  
 usage:   
 ```
-python norsthstar_provision_new_lsp.py
+python northstar_provision_new_lsp.py
 ```
   
 The script [**python northstar_get_actives_lsp.py**](northstar_get_actives_lsp.py) makes a rest call to Juniper Northstar to get all active LSP  
