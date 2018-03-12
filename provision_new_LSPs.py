@@ -19,11 +19,11 @@ my_variables_in_yaml=import_variables_from_file()
 authuser = my_variables_in_yaml['northstar']['username']
 authpwd = my_variables_in_yaml['northstar']['password']
 url_base = 'http://' + my_variables_in_yaml['northstar']['ip'] + ':8091/NorthStar/API/v2/tenant/'
-payload = json.dump(my_variables_in_yaml['lsp_to_add'])
+payload = my_variables_in_yaml['lsp_to_add']
 
 url = url_base + '1/topology/1/te-lsps'
 headers = { 'content-type' : 'application/json'}
 
 for item in payload: 
-    q = requests.post(url, headers=headers, auth=(authuser, authpwd), data=item)
+    q = requests.post(url, headers=headers, auth=(authuser, authpwd), data=json.dumps(item, indent=4))
 

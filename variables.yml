@@ -2,24 +2,30 @@
 # Edit this file to define what your Northstar details
 
 northstar: 
-  ip: 192.168.233.144 
-  username: ksator
-  password: ksator
+  ip: 10.10.2.58
+  username: admin
+  password: northstar
 
 lsp_to_add:
     - name: "lSP1frompython"
-      from_topoObjectType: "ipv4"
-      from_address": "10.139.10.139"
-      to_topoObjectType": "ipv4"
-      to_address": "10.210.10.112"
-      plannedProperties_bandwidth": "1M"
-      plannedProperties_setupPriority": 7
-      plannedProperties_holdingPriority": 7
+      from: 
+          topoObjectType: "ipv4"
+          address: "10.139.10.139"
+      to:
+          topoObjectType: "ipv4"
+          address: "10.210.10.112"
+      plannedProperties:
+          bandwidth: "1M"
+          setupPriority: 7
+          holdingPriority: 7
     - name: "lSP2frompython"
-      from_topoObjectType: "ipv4"
-      from_address": "10.210.10.118"
-      to_topoObjectType": "ipv4"
-      to_address": "12.0.0.107"
-      plannedProperties_bandwidth": "1M"
-      plannedProperties_setupPriority": 7
-      plannedProperties_holdingPriority": 7
+      from:
+          topoObjectType: "ipv4"
+          address: "10.139.10.139"
+      to:
+          topoObjectType: "ipv4"
+          address: "10.210.10.118"
+      plannedProperties:
+          bandwidth: "1M"
+          setupPriority: 7
+          holdingPriority: 7
