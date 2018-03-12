@@ -33,5 +33,6 @@ lsp_to_add:
 lsp_to_delete: 
     - "lSP1frompython"
     - "lSP2frompython"
+    - "newlspfrompython"
 
 

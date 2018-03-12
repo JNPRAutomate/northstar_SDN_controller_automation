@@ -21,7 +21,7 @@ url_base = 'http://' + my_variables_in_yaml['northstar']['ip'] + ':8091/NorthSta
 
 url = url_base + '1/topology/1/te-lsps'
 headers = { 'content-type' : 'application/json'}
-payload1='''{
+payload='''{
     "name": "newlspfrompython",
     "from": {
         "topoObjectType": "ipv4",
@@ -38,4 +38,6 @@ payload1='''{
     }
 }'''
 
-q = requests.post(url, headers=headers, auth=(authuser, authpwd), data=payload1)
+q = requests.post(url, headers=headers, auth=(authuser, authpwd), data=payload)
+print 'created LSP: ' + q.json()['name']
+

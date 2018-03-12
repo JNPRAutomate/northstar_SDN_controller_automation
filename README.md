@@ -25,7 +25,7 @@ Move to your local copy of this remote repository
 cd northstar_SDN_controller_automation
 ```
 
-The file [**variables.yml**](variables.yml) has your Northstar setup details.  
+The file [**variables.yml**](variables.yml) has your Northstar setup details: SDN controller ip address, username and password. LSPs to add/remove. 
 usage:   
 ```
 vi variables.yml
@@ -34,31 +34,38 @@ vi variables.yml
 The script [**provision_new_LSP.py**](provision_new_LSP.py) makes rest call to Northstar to create a new LSP. The LSP is hardcoded in the script.    
 usage:   
 ```
-python provision_new_lsp.py
+python provision_new_LSP.py 
+created LSP: newlspfrompython
 ```
 
 The script [**provision_new_LSPs.py**](provision_new_LSPs.py) makes rest calls to Northstar to create new LSPs. They are defined in [**variables.yml**](variables.yml) file.    
 usage:   
 ```
-python provision_new_lsp.py
+python provision_new_LSPs.py 
+created LSP: lSP1frompython
+created LSP: lSP2frompython
 ```
 
 The script [**python get_active_LSPs.py**](get_active_LSPs.py) makes a rest call to Northstar to get all actives LSP  
 usage: 
 ```
-python get_actives_lsp.py
+python get_active_LSPs.py
 ```
   
 The script [**get_all_LSPs.py**](get_all_LSPs.py) makes rest calls to Northstar to get all LSP  
 usage:   
 ```
-python get_all_lsp.py
+python get_all_LSPs.py
 ```
 
 The script [**delete_LSPs.py**](delete_LSPs.py) makes rest calls to Northstar to delete the LSPs defined in [**variables.yml**](variables.yml) file.  
 Usage: 
 ```
-python delete_LSPs.py 
+python delete_LSPs.py
+deleted LSP: lSP1frompython
+deleted LSP: lSP2frompython
+deleted LSP: newlspfrompython
+ 
 ```
 
 ## Continuous integration with Travis CI
