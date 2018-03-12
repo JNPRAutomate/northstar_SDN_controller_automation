@@ -25,11 +25,11 @@ payload1='''{
     "name": "newlspfrompython",
     "from": {
         "topoObjectType": "ipv4",
-        "address": "11.0.0.101"
+        "address": "10.139.10.139"
     },
     "to": {
         "topoObjectType": "ipv4",
-        "address": "11.0.0.107"
+        "address": "10.139.10.112"
     },
     "plannedProperties": {
         "bandwidth": "1M",
