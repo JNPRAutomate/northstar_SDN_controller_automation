@@ -2,7 +2,7 @@
 # Edit this file to define what your Northstar details
 
 northstar: 
-  ip: 10.10.2.58
+  ip: 10.10.2.5
   username: admin
   password: northstar
 
