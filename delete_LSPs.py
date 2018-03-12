@@ -1,4 +1,4 @@
-# This python script makes a rest call to Juniper Northstar to delete LSPs defined in the file variables.yml
+# This python script makes REST calls to Northstar to delete the LSPs defined in the file variables.yml
 # usage: python delete_LSPs.py
 
 import requests
