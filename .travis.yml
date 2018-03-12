@@ -13,7 +13,8 @@ script:
   - python -m py_compile get_active_LSPs.py
   - python -m py_compile get_all_LSPs.py
   - python -m py_compile provision_new_LSPs.py
-  
+  - python -m py_compile delete_LSPs.py
+
 
 branches:
   only:

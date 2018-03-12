@@ -26,4 +26,6 @@ headers = { 'content-type' : 'application/json'}
 
 for item in payload: 
     q = requests.post(url, headers=headers, auth=(authuser, authpwd), data=json.dumps(item, indent=4))
+    print 'created LSP: ' + q.json()['name']
+
 

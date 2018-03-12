@@ -29,3 +29,9 @@ lsp_to_add:
           bandwidth: "1M"
           setupPriority: 7
           holdingPriority: 7
+
+lsp_to_delete: 
+    - "lSP1frompython"
+    - "lSP2frompython"
+
+
