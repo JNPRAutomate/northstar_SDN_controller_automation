@@ -31,22 +31,22 @@ usage:
 vi variables.yml
 ```
 
-The script [**norsthstar_provision_new_lsp.py**](norsthstar_provision_new_lsp.py) makes rest call to Juniper Northstar to create a new LSP  
+The script [**provision_new_lsp.py**](provision_new_lsp.py) makes rest call to Juniper Northstar to create a new LSP  
 usage:   
 ```
-python northstar_provision_new_lsp.py
+python provision_new_lsp.py
 ```
   
-The script [**python northstar_get_actives_lsp.py**](northstar_get_actives_lsp.py) makes a rest call to Juniper Northstar to get all active LSP  
+The script [**python get_actives_lsp.py**](get_actives_lsp.py) makes a rest call to Juniper Northstar to get all active LSP  
 usage: 
 ```
-python northstar_get_actives_lsp.py
+python get_actives_lsp.py
 ```
   
-The script [**northstar_get_all_lsp.py**](northstar_get_all_lsp.py) makes a rest call to Juniper Northstar to get all LSP  
+The script [**get_all_lsp.py**](get_all_lsp.py) makes a rest call to Juniper Northstar to get all LSP  
 usage:   
 ```
-python northstar_get_all_lsp.py
+python get_all_lsp.py
 ```
 
 ## Continuous integration with Travis CI

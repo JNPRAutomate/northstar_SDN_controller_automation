@@ -1,5 +1,5 @@
 # this python script makes a rest call to Juniper Northstar to get all active LSP 
-# usage: python northstar_get_actives_lsp.py
+# usage: python get_actives_lsp.py
 
 
 import requests

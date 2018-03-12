@@ -9,9 +9,9 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python -m py_compile northstar_provision_new_lsp.py
-  - python -m py_compile northstar_get_actives_lsp.py
-  - python -m py_compile northstar_get_all_lsp.py
+  - python -m py_compile provision_new_lsp.py
+  - python -m py_compile get_actives_lsp.py
+  - python -m py_compile get_all_lsp.py
 
 branches:
   only:
