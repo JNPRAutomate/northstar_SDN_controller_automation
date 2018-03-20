@@ -15,6 +15,8 @@ script:
   - python -m py_compile provision_new_LSPs.py
   - python -m py_compile delete_LSPs.py
   - python -m py_compile put_nodes_in_maintenance.py
+  - python -m py_compile list_maintenance.py
+
 
 branches:
   only:

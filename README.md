@@ -77,6 +77,14 @@ Usage:
 python put_nodes_in_maintenance.py
 ```
 
+The script [**list_maintenance.py**](list_maintenance.py) makes rest calls to Northstar to get the maintenance details from Northstar and print these details   
+Usage:
+```
+python list_maintenance.py
+```
+
+
+
 ## Continuous integration with Travis CI
 
 There is a github webhook with Travis CI
