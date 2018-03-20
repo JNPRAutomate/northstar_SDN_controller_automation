@@ -28,6 +28,7 @@ cd northstar_SDN_controller_automation
 The file [**variables.yml**](variables.yml) has your Northstar setup details: 
 - SDN controller ip address, username and password. 
 - LSPs to add/remove.  
+- Nodes to put into maintenance mode
 
 usage:   
 ```
