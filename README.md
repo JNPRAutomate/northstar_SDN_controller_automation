@@ -81,6 +81,34 @@ The script [**list_maintenance.py**](list_maintenance.py) makes rest calls to No
 Usage:
 ```
 python list_maintenance.py
+[{u'elements': [{u'id': u'0110.0000.0101',
+                 u'index': 1,
+                 u'topoObjectType': u'node'},
+                {u'id': u'0110.0000.0102',
+                 u'index': 2,
+                 u'topoObjectType': u'node'}],
+  u'endTime': u'2018-03-21T01:48:09Z',
+  u'maintenanceIndex': 3,
+  u'name': u'event1',
+  u'startTime': u'2018-03-21T01:33:09Z',
+  u'status': u'planned',
+  u'topoObjectType': u'maintenance',
+  u'topologyIndex': 1,
+  u'user': u'admin'},
+ {u'elements': [{u'id': u'0110.0000.0103',
+                 u'index': 3,
+                 u'topoObjectType': u'node'},
+                {u'id': u'0110.0000.0104',
+                 u'index': 4,
+                 u'topoObjectType': u'node'}],
+  u'endTime': u'2018-03-21T03:33:18Z',
+  u'maintenanceIndex': 4,
+  u'name': u'event2',
+  u'startTime': u'2018-03-21T01:33:18Z',
+  u'status': u'planned',
+  u'topoObjectType': u'maintenance',
+  u'topologyIndex': 1,
+  u'user': u'admin'}]
 ```
 
 
