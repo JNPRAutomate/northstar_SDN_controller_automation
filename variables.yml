@@ -71,10 +71,12 @@ lsp_to_delete:
 
 maintenance_events:
   - name: 'event1'
+    duration_in_minutes: 15
     nodes:
           - "vmx101"
           - "vmx102"
   - name: 'event2'
+    duration_in_minutes: 120
     nodes:
           - "vmx103"
           - "vmx104"

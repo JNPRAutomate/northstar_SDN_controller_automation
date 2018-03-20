@@ -32,7 +32,6 @@ def get_node_index(qqqq):
 my_variables_in_yaml=import_variables_from_file()
 authuser = my_variables_in_yaml['northstar']['username']
 authpwd = my_variables_in_yaml['northstar']['password']
-#nodes = my_variables_in_yaml['nodes_to_put_into_maintenance']
 maintenance_events =  my_variables_in_yaml['maintenance_events']
 
 headers = { 'content-type' : 'application/json'}
@@ -41,9 +40,6 @@ headers = {'Authorization':get_token(), 'Accept' : 'application/json', 'Content-
 
 url_base = 'http://' + my_variables_in_yaml['northstar']['ip'] + ':8091/NorthStar/API/v2/tenant/'
 maintenance_url = url_base + '1/topology/1/maintenances'
-
-starttime = datetime.now()
-endtime = datetime.now() + timedelta(minutes=15)
 
 for event in maintenance_events:
  elements_to_put_in_maintenance = []
@@ -54,8 +50,8 @@ for event in maintenance_events:
      "topologyIndex": 1,
      "user": "admin",
      "name": event['name'],
-     "startTime": starttime.isoformat(),
-     "endTime": endtime.isoformat(),
+     "startTime": datetime.now().isoformat(),
+     "endTime": (datetime.now() + timedelta(minutes=event['duration_in_minutes'])).isoformat(),
      "elements": elements_to_put_in_maintenance
      }
  m_res = requests.post(maintenance_url, data=json.dumps(maintenance_data), headers=headers, verify=False)
