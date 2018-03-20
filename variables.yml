@@ -2,37 +2,69 @@
 # Edit this file to define what your Northstar details
 
 northstar: 
-  ip: 10.10.2.58
+  ip: 10.102.180.160
   username: admin
-  password: northstar
+  password: Embe1mpls
+#  ip: 10.10.2.58
+#  username: admin
+#  password: northstar
 
 lsp_to_add:
-    - name: "lSP1frompython"
-      from: 
-          topoObjectType: "ipv4"
-          address: "10.139.10.139"
-      to:
-          topoObjectType: "ipv4"
-          address: "10.210.10.112"
-      plannedProperties:
-          bandwidth: "1M"
-          setupPriority: 7
-          holdingPriority: 7
-    - name: "lSP2frompython"
+#    - name: "lSP1frompython"
+#      from: 
+#          topoObjectType: "ipv4"
+#          address: "10.139.10.139"
+#      to:
+#          topoObjectType: "ipv4"
+#          address: "10.210.10.112"
+#      plannedProperties:
+#          bandwidth: "1M"
+#          setupPriority: 7
+#          holdingPriority: 7
+#    - name: "lSP2frompython"
+#      from:
+#          topoObjectType: "ipv4"
+#          address: "10.139.10.139"
+#      to:
+#          topoObjectType: "ipv4"
+#          address: "10.210.10.118"
+#      plannedProperties:
+#          bandwidth: "1M"
+#          setupPriority: 7
+#          holdingPriority: 7
+    - name: "lSP3frompython"
       from:
           topoObjectType: "ipv4"
-          address: "10.139.10.139"
+          address: "11.0.0.102"
       to:
           topoObjectType: "ipv4"
-          address: "10.210.10.118"
+          address: "11.0.0.103"
+      plannedProperties:
+          bandwidth: "1M"
+          setupPriority: 7
+          holdingPriority: 7
+    - name: "lSP4frompython"
+      from:
+          topoObjectType: "ipv4"
+          address: "11.0.0.104"
+      to:
+          topoObjectType: "ipv4"
+          address: "11.0.0.101"
       plannedProperties:
           bandwidth: "1M"
           setupPriority: 7
           holdingPriority: 7
 
+
 lsp_to_delete: 
-    - "lSP1frompython"
-    - "lSP2frompython"
+#    - "lSP1frompython"
+#    - "lSP2frompython"
     - "newlspfrompython"
+    - "lSP3frompython"
+    - "lSP4frompython"
 
 
+
+nodes_to_put_into_maintenance:
+    - "vmx101"
+    - "vmx102"
