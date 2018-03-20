@@ -25,7 +25,10 @@ Move to your local copy of this remote repository
 cd northstar_SDN_controller_automation
 ```
 
-The file [**variables.yml**](variables.yml) has your Northstar setup details: SDN controller ip address, username and password. LSPs to add/remove. 
+The file [**variables.yml**](variables.yml) has your Northstar setup details: 
+- SDN controller ip address, username and password. 
+- LSPs to add/remove.  
+
 usage:   
 ```
 vi variables.yml

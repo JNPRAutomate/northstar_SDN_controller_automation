@@ -2,7 +2,11 @@
 # Edit this file to define what your Northstar details
 
 northstar: 
+<<<<<<< HEAD
   ip: 10.102.180.160
+=======
+  ip: 10.10.2.5
+>>>>>>> 2cbebd85ec0e173269f1a5ba702fc85542a2283b
   username: admin
   password: Embe1mpls
 #  ip: 10.10.2.58

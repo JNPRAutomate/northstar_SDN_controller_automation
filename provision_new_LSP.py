@@ -1,4 +1,4 @@
-#  This python script makes rest call to Juniper Northstar to create a new LSP
+#  This python script makes rest call to Northstar to create a new LSP. The LSP is hardcoded in the script
 #  usage: python provision_new_LSP.py
 import json
 import requests
