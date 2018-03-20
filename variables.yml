@@ -65,6 +65,17 @@ lsp_to_delete:
 
 
 
-nodes_to_put_into_maintenance:
-    - "vmx101"
-    - "vmx102"
+#nodes_to_put_into_maintenance:
+#    - "vmx101"
+#    - "vmx102"
+
+maintenance_events:
+  - name: 'event1'
+    nodes:
+          - "vmx101"
+          - "vmx102"
+  - name: 'event2'
+    nodes:
+          - "vmx103"
+          - "vmx104"
+

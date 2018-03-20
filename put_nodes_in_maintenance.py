@@ -29,25 +29,11 @@ def get_node_index(qqqq):
    node_index = i['nodeIndex']
  return node_index
 
-def put_nodes_in_maintenance():
- elements_to_put_in_maintenance = []
- for item in nodes:
-  elements_to_put_in_maintenance.append({"topoObjectType": "node", "index": get_node_index(item)})
- maintenance_data = {
-     "topoObjectType": "maintenance",
-     "topologyIndex": 1,
-     "user": "admin",
-     "name": "whatever",
-     "startTime": starttime.isoformat(),
-     "endTime": endtime.isoformat(),
-     "elements": elements_to_put_in_maintenance
-     }
- return(maintenance_data)
-
 my_variables_in_yaml=import_variables_from_file()
 authuser = my_variables_in_yaml['northstar']['username']
 authpwd = my_variables_in_yaml['northstar']['password']
-nodes = my_variables_in_yaml['nodes_to_put_into_maintenance']
+#nodes = my_variables_in_yaml['nodes_to_put_into_maintenance']
+maintenance_events =  my_variables_in_yaml['maintenance_events']
 
 headers = { 'content-type' : 'application/json'}
 
@@ -59,8 +45,20 @@ maintenance_url = url_base + '1/topology/1/maintenances'
 starttime = datetime.now()
 endtime = datetime.now() + timedelta(minutes=15)
 
-json.dumps(put_nodes_in_maintenance())
-m_res = requests.post(maintenance_url, data=json.dumps(put_nodes_in_maintenance()), headers=headers, verify=False)
-#m_res
-#print m_res.json()
+for event in maintenance_events:
+ elements_to_put_in_maintenance = []
+ for item in event['nodes']:
+  elements_to_put_in_maintenance.append({"topoObjectType": "node", "index": get_node_index(item)})
+ maintenance_data = {
+     "topoObjectType": "maintenance",
+     "topologyIndex": 1,
+     "user": "admin",
+     "name": event['name'],
+     "startTime": starttime.isoformat(),
+     "endTime": endtime.isoformat(),
+     "elements": elements_to_put_in_maintenance
+     }
+ m_res = requests.post(maintenance_url, data=json.dumps(maintenance_data), headers=headers, verify=False)
+ #m_res
+ #print m_res.json()
 
