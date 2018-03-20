@@ -64,11 +64,6 @@ lsp_to_delete:
     - "lSP4frompython"
 
 
-
-#nodes_to_put_into_maintenance:
-#    - "vmx101"
-#    - "vmx102"
-
 maintenance_events:
   - name: 'event1'
     duration_in_minutes: 15
