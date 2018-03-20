@@ -71,11 +71,11 @@ deleted LSP: lSP2frompython
 deleted LSP: newlspfrompython
 ```
 
-The script [**put_nodes_in_maintenance.py**](put_nodes_in_maintenance.py) makes rest calls to Northstar to put the nodes defined in [**variables.yml**](variables.yml) file into maintenance mode.
+The script [**put_nodes_in_maintenance.py**](put_nodes_in_maintenance.py) makes rest calls to Northstar to put the nodes defined in [**variables.yml**](variables.yml) file into maintenance mode.  
 Usage:
 ```
 python put_nodes_in_maintenance.py
-
+```
 
 ## Continuous integration with Travis CI
 
