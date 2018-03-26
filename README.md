@@ -72,6 +72,8 @@ deleted LSP: newlspfrompython
 ```
 
 The script [**put_nodes_in_maintenance.py**](put_nodes_in_maintenance.py) makes rest calls to Northstar to put the nodes defined in [**variables.yml**](variables.yml) file into maintenance mode.  
+During a maintenance event, the selected elements are considered logically down, and the system reroutes the LSPs around those elements during the maintenance period. After the maintenance event is completed, delegated and PCE-initiated LSPs are reverted back to optimal paths.  
+
 Usage:
 ```
 python put_nodes_in_maintenance.py
@@ -111,8 +113,6 @@ python list_maintenance.py
   u'user': u'admin'}]
 ```
 
-
-
 ## Continuous integration with Travis CI
 
 There is a github webhook with Travis CI
@@ -121,7 +121,6 @@ The files [**.travis.yml**](.travis.yml) and [**requirements.txt**](requirements
 
 Here's the last build status  
 [![Build Status](https://travis-ci.org/ksator/northstar_SDN_controller_automation.svg?branch=master)](https://travis-ci.org/ksator/northstar_SDN_controller_automation)
-
 
 ## Looking for more automation solutions
 
