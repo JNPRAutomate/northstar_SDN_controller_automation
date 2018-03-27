@@ -1,7 +1,9 @@
 [![Build Status](https://travis-ci.org/ksator/northstar_SDN_controller_automation.svg?branch=master)](https://travis-ci.org/ksator/northstar_SDN_controller_automation)
 
 ## About this repo
-how to automate Northstar SDN controller with Python
+
+This repository has automation content for Northstar SDN controller.  
+This repository requires Northstar version 4 or above. This repository doesnt cover how to install Northstar.  
 
 ## install the requirements to use the automation content hosted in this repository  
 The python scripts hosted in this repository use the library **requests** to make REST calls to Northstar.   
