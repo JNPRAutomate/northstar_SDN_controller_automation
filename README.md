@@ -3,7 +3,7 @@
 ## About this repo
 
 This repository has automation content for Northstar SDN controller.  
-This repository requires Northstar version 4 or above. This repository doesnt cover how to install Northstar.  
+This repository requires Northstar version 4 or above. This repository doesn’t cover how to install Northstar.  
 
 ## install the requirements to use the automation content hosted in this repository  
 The python scripts hosted in this repository use the library **requests** to make REST calls to Northstar.   
@@ -37,14 +37,14 @@ usage:
 vi variables.yml
 ```
 
-The script [**provision_new_LSP.py**](provision_new_LSP.py) makes rest call to Northstar to create a new LSP. The LSP is hardcoded in the script.    
+The script [**provision_new_LSP.py**](provision_new_LSP.py) makes REST calls to Northstar to create a new LSP. The LSP is hardcoded in the script.    
 usage:   
 ```
 python provision_new_LSP.py 
 created LSP: newlspfrompython
 ```
 
-The script [**provision_new_LSPs.py**](provision_new_LSPs.py) makes rest calls to Northstar to create new LSPs. They are defined in [**variables.yml**](variables.yml) file.    
+The script [**provision_new_LSPs.py**](provision_new_LSPs.py) makes REST calls to Northstar to create new LSPs. They are defined in [**variables.yml**](variables.yml) file.    
 usage:   
 ```
 python provision_new_LSPs.py 
@@ -52,19 +52,19 @@ created LSP: lSP1frompython
 created LSP: lSP2frompython
 ```
 
-The script [**python get_active_LSPs.py**](get_active_LSPs.py) makes a rest call to Northstar to get all actives LSP  
+The script [**python get_active_LSPs.py**](get_active_LSPs.py) makes a REST call to Northstar to get all actives LSP  
 usage: 
 ```
 python get_active_LSPs.py
 ```
   
-The script [**get_all_LSPs.py**](get_all_LSPs.py) makes rest calls to Northstar to get all LSP  
+The script [**get_all_LSPs.py**](get_all_LSPs.py) makes REST calls to Northstar to get all LSP  
 usage:   
 ```
 python get_all_LSPs.py
 ```
 
-The script [**delete_LSPs.py**](delete_LSPs.py) makes rest calls to Northstar to delete the LSPs defined in [**variables.yml**](variables.yml) file.  
+The script [**delete_LSPs.py**](delete_LSPs.py) makes REST calls to Northstar to delete the LSPs defined in [**variables.yml**](variables.yml) file.  
 Usage: 
 ```
 python delete_LSPs.py
@@ -73,7 +73,7 @@ deleted LSP: lSP2frompython
 deleted LSP: newlspfrompython
 ```
 
-The script [**put_nodes_in_maintenance.py**](put_nodes_in_maintenance.py) makes rest calls to Northstar to put the nodes defined in [**variables.yml**](variables.yml) file into maintenance mode.  
+The script [**put_nodes_in_maintenance.py**](put_nodes_in_maintenance.py) makes REST calls to Northstar to put the nodes defined in [**variables.yml**](variables.yml) file into maintenance mode.  
 During a maintenance event, the selected elements are considered logically down, and the system reroutes the LSPs around those elements during the maintenance period. After the maintenance event is completed, delegated and PCE-initiated LSPs are reverted back to optimal paths.  
 
 Usage:
@@ -81,7 +81,7 @@ Usage:
 python put_nodes_in_maintenance.py
 ```
 
-The script [**list_maintenance.py**](list_maintenance.py) makes rest calls to Northstar to get the maintenance details from Northstar and print these details   
+The script [**list_maintenance.py**](list_maintenance.py) makes REST calls to Northstar to get the maintenance details from Northstar and print these details   
 Usage:
 ```
 python list_maintenance.py
