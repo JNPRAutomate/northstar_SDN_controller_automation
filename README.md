@@ -15,7 +15,7 @@ pip install requests
 Run these commands on your laptop:
 ```
 sudo -s
-git clone https://github.com/ksator/northstar_SDN_controller_automation.git
+git clone https://github.com/JNPRAutomate/northstar_SDN_controller_automation.git
 ```
 
 ## Use this repository
