@@ -3,8 +3,8 @@
 
 northstar: 
   ip: 10.102.180.160
-  username: admin
-  password: Embe1mpls
+  username: use-your-northstar-username
+  password: use-your-northstar-password
 #  ip: 10.10.2.58
 #  username: admin
 #  password: northstar
